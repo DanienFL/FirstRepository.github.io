@@ -59,6 +59,11 @@ header nav a{
     border:  none;
 }
 
+.login-button:hover{
+    color: white;
+    cursor: pointer;
+}
+
 /*Titulo*/
 
 .title-pag{
@@ -108,6 +113,7 @@ header nav a{
     padding-left: 20px;
 }
 
+
 .send-message input{
     display: flex;
     align-items: center;
@@ -129,6 +135,7 @@ header nav a{
     border-radius: 10px;
 }
 
+
 .button-send-message button{
     display: flex;
     align-items: center;
@@ -147,6 +154,8 @@ header nav a{
     display: flex;
     color: black;
     cursor: pointer;
+    zoom: 1.2;
+    font-size: 10px;
 }
 
 .background-image{
@@ -180,11 +189,7 @@ header nav a{
     right: 10px;
     margin-left: 125px;
     margin-top: 40px;
-    height: 55px;
-    width: 700px;
-    font-size: 30px;
-    background-color: #96EFFF;
-    border-radius: 15px;
+    font-size:30px;
 }
 
 .social-footer nav{
@@ -196,16 +201,41 @@ header nav a{
 }
 
 .social-footer nav a{
-    color: rgba(0, 0, 0, 0.432);
+    color: rgba(0, 0, 0, 0.753);
     border-radius: 50%;
-    border: 1px solid #7B66FF;
-    background-color: #7B66FF;
+    border: 2px solid #2200ff;
+    background-color: #cacacf5e;
     padding: 5px;
+}
+
+.social-footer nav a:hover{
+    color: black;
+    zoom: 1.1;
 }
 
 .explore-footer{
     display: flex;
     align-items: center;
+    padding-left: 125;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+.explore-footer nav a{
+    display: flex;
+    gap: 10px;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.image-row{
+    font-size: 1px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
