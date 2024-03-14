@@ -1,0 +1,357 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*Header*/
+header{
+    padding: 2vh 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: monospace;
+    height: -15px;
+    gap: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.name-pag{
+    display: flex;
+    font-size: 35px;
+    color: rgba(12, 50, 175, 0.486);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-left: 10px;
+    font-size: 21px;
+}
+
+header nav a{
+    display: flex;
+    align-items: center;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7B66FF;
+    border:  none;
+}
+
+.login-button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*Titulo*/
+
+.title-pag{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 28px;
+    margin-top: 100px;
+    margin-left: 60px;
+    width: 427px;
+    height: 210px;
+    flex-direction: column;
+}
+
+.title-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-family: Prosto One;
+    margin-left: 65px;
+}
+
+.mini-title{
+    display: flex;
+    margin-left: 125px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.message-form{
+    display: flex;
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 40px;
+    width: 500px;
+    height: 50px;
+    background-color: #96EFFF;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.send-message{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.send-message input{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 325px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #96EFFF;
+}
+
+.button-send-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5FBDFF;
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.button-send-message button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none #5FBDFF;
+    color: white;
+    background-color: #5FBDFF;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+}
+
+.button-send-message button:hover{
+    display: flex;
+    color: black;
+    cursor: pointer;
+    zoom: 1.2;
+    font-size: 10px;
+}
+
+.background-image{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 1;
+    background-color: #96EFFF;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 590px;
+    padding-bottom: 300px;
+}
+
+.image{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    right: -50px;
+    top: 150px;
+    border: none;
+    outline: none;
+}
+
+/*Footer*/
+
+.social-footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 10px;
+    margin-left: 125px;
+    margin-top: 40px;
+    font-size:30px;
+}
+
+.social-footer nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    left: 10px;
+}
+
+.social-footer nav a{
+    color: rgba(0, 0, 0, 0.753);
+    border-radius: 50%;
+    border: 2px solid #2200ff;
+    background-color: #cacacf5e;
+    padding: 5px;
+}
+
+.social-footer nav a:hover{
+    color: black;
+    zoom: 1.1;
+}
+
+.explore-footer{
+    display: flex;
+    align-items: center;
+    padding-left: 125;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+.explore-footer nav a{
+    display: flex;
+    gap: 10px;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.image-row{
+    font-size: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:1024px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Header*/
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 5px aqua;
+        border-radius: 15px;
+    }
+
+    header nav a{
+        display: none;
+    }
+
+    .login-button{
+        display: flex;
+        padding: 35px 50px;
+        font-weight: 600;
+        font-size: 25px;    
+    }
+
+    /*Main*/
+    .title-pag{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 3px 2px;
+        z-index: 2;
+        font-size: 32px;
+        word-spacing: -1ch;
+        margin-left: 50px;
+    }
+
+    .title-name{
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    .mini-title{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        margin-top: 125px;
+        font-size: 21px;
+    }
+
+
+    .background-image{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        margin-top: 140px;
+        width: 300px;
+        height: 25px;
+        border-radius: 100%;
+        
+    }
+
+    .image{
+        display: flex;
+        position: relative;
+        z-index: 1;
+        top: -100px;
+        width: 250px;
+        height: 500px;
+    }
+
+    .message-form{
+        display: flex;
+        padding: 35px 0;
+        padding-left: 45;
+    }
+
+
+    .send-message{
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    .button-send-message{
+        display: flex;
+        padding: 35px 75px;
+    }
+
+    /*Footer*/
+
+    .social-footer{
+        display: flex;
+        align-items: center;
+        font-size: 43px;
+        padding-left: 60px;
+    }
+
+    .explore-footer{
+        display: flex;
+        align-items: center;
+        padding-left: 310px;
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+}
+
