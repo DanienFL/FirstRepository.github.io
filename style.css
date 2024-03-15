@@ -64,6 +64,9 @@ header nav a{
     cursor: pointer;
 }
 
+.list-1{
+    display: none;
+}
 /*Titulo*/
 
 .title-pag{
@@ -268,6 +271,14 @@ header nav a{
         font-size: 25px;    
     }
 
+    .list-1{
+        display: none;
+    }
+
+    .bi-list{
+        display: none;
+    }
+
     /*Main*/
     .title-pag{
         display: flex;
@@ -355,3 +366,142 @@ header nav a{
 
 }
 
+/*Responsive-Mobile*/
+
+@media screen and (max-width:844px){
+
+    /*Header*/
+
+    header{
+        display:flex;
+        padding: 10px 10px;
+        border: none;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1ch;
+    }
+    
+    .login-button{
+        display: none;
+        
+    }
+
+    .list-1{
+        display: flex;
+        border: none;
+    }
+
+    .bi-list{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    /*Title*/
+
+    .title-name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 55px;
+        word-spacing: 1px;
+        margin-right: 50px;
+        border-top: gray 1px solid;
+        position: relative;
+        padding: 20px 0;
+        right: 70px;
+        width: 400px;
+    }
+
+    .mini-title{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        right: 180px;
+        top: -100;
+        font-size: 25px;
+        padding: 15px 0;
+        flex-wrap: nowrap;
+        font-weight: 300;
+        word-spacing: -1;
+        border-top: 1px solid gray;
+        width: 500px;
+    }
+
+    h3{
+        display: flex;
+        position: relative;
+        font-size: 18px;
+        color: gray;
+        font-weight: 100;
+    }
+
+
+    .background-image{
+        display: none;
+    }
+
+    .image{
+        display: none;
+    }
+    
+
+    .message-form{
+        display: flex;
+        padding: 35px 10px;
+        width: 250px;
+        position: relative;
+        right: 100px;
+        top: -100;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .title-name{
+        display: flex;
+    }
+
+    .button-send-message{
+        display: flex;
+        padding: 35px 10px;
+    }
+
+    .send-messaged{
+        display: flex;
+        width: 200px;
+    }
+
+
+
+    .send-message input{
+        display: flex;
+        width: 200px;
+    }
+
+    /*Footer*/
+
+    .social-footer{
+        display: flex;
+        align-items: center;
+        font-size: 29px;
+        position: relative;
+        right: 150px;
+        bottom: 90px;
+    }
+
+    .explore-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 150px;
+        font-size: 50px;
+        top: -50px;
+    }
+
+
+}
