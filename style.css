@@ -56,7 +56,6 @@ header nav a{
     font-size: 18px;
     font-weight: 600;
     background-color: #7B66FF;
-    border:  none;
 }
 
 .login-button:hover{
@@ -65,6 +64,10 @@ header nav a{
 }
 
 .list-1{
+    display: none;
+}
+
+.bi-list{
     display: none;
 }
 /*Titulo*/
@@ -368,7 +371,7 @@ header nav a{
 
 /*Responsive-Mobile*/
 
-@media screen and ( min-width:844){
+@media screen and ( max-width:844){
 
     /*Header*/
 
